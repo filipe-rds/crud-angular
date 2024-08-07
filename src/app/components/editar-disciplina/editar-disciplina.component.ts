@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
+import { DisciplinaService } from "../../shared/services/disciplina.service";
 
 @Component({
   selector: 'app-editar-disciplina',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class EditarDisciplinaComponent {
 
+  constructor(private rotaAtual: ActivatedRoute) { }
 }

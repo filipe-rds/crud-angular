@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DisciplinaService } from "../../shared/services/disciplina.service";
 
 @Component({
   selector: 'app-listar-disciplina',
