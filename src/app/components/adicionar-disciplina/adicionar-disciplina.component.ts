@@ -9,6 +9,6 @@ import { DisciplinaService } from "../../shared/services/disciplina.service";
 })
 export class AdicionarDisciplinaComponent {
 
-  constructor(private rotaAtual: ActivatedRoute) { }
+  constructor(private rotaAtual: ActivatedRoute, private controlador : DisciplinaService) {}
 
 }

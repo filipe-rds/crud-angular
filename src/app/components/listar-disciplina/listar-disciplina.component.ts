@@ -8,4 +8,6 @@ import { DisciplinaService } from "../../shared/services/disciplina.service";
 })
 export class ListarDisciplinaComponent {
 
+  constructor(controlador: DisciplinaService) { }
+
 }
