@@ -1,6 +1,6 @@
 <h4>{{opcao()}}</h4>
-<mat-card class="">
-  <mat-card-content>
+<mat-card class="main">
+  <mat-card-content class="full">
     <mat-form-field>
       <mat-label>Nome</mat-label>
       <input matInput [(ngModel)]="disciplina.nome">
@@ -14,13 +14,14 @@
       <input matInput [(ngModel)]="disciplina.cargaHoraria">
     </mat-form-field>
   </mat-card-content>
+  <button mat-icon-button (click)="cadastro()">
+    @if (editar) {
+    <mat-icon>edit</mat-icon>
+    } @else {
+    <mat-icon>add</mat-icon>
+    }
+  
+  </button>
 </mat-card>
 
-<button mat-icon-button (click)="cadastro()">
-  @if (editar) {
-  <mat-icon>edit</mat-icon>
-  } @else {
-  <mat-icon>add</mat-icon>
-  }
 
-</button>

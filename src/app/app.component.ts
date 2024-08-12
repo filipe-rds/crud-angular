@@ -9,10 +9,5 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'gerenciador-disciplinas';
   constructor(private roteador: Router) { }
-  ngOnInit(): void {
-    // Navegar para a rota 'listar-disciplina' ao carregar o componente pela primeira vez
-    this.roteador.navigate(['/listar-disciplina']);
-  }
-
 }
 
