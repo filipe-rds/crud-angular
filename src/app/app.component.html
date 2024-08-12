@@ -1,7 +1,6 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<button mat-button [matMenuTriggerFor]="menu">Opções<mat-icon style=>settings</mat-icon></button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item [routerLink]="['cadastro-disciplina']">Cadastrar Disciplina</button>
-  <button mat-menu-item [routerLink]="['editar-disciplina']">Editar Disciplina</button>
+  <button mat-menu-item [routerLink]="['listar-disciplina']">Listar Disciplinas</button>
 </mat-menu>
-<app-listar-disciplina></app-listar-disciplina>
 <router-outlet></router-outlet>

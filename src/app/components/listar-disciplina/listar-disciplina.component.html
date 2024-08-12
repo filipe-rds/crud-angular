@@ -1,1 +1,21 @@
-<p>listar-disciplina works!</p>
+<div class="">
+  @for (disciplina of disciplinas; track $index) {
+  <mat-card class="">
+    <mat-card-header>
+      <h5>{{ disciplina.nome }}</h5>
+    </mat-card-header>
+    <mat-card-content>
+      Professor(a): {{ disciplina.professor }}<br>
+      Carga Horária: {{ disciplina.cargaHoraria }} horas
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button (click)="editar(disciplina)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="remover(disciplina)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  }
+</div>
