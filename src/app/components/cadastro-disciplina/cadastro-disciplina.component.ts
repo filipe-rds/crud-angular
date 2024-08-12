@@ -29,7 +29,7 @@ export class CadastroDisciplinaComponent {
       this.roteador.navigate(['/listar-disciplina']);
     }
     else {
-      //this.controlador.atualizarDisciplina(this.disciplina.id, this.disciplina.nome,this.disciplina.cargaHoraria, this.disciplina.professor);
+      this.controlador.atualizarDisciplina(this.disciplina.id, this.disciplina.nome,this.disciplina.cargaHoraria, this.disciplina.professor);
       this.roteador.navigate(['/listar-disciplina']);
     }
   }

@@ -8,15 +8,7 @@ import { DisciplinaService } from "./shared/services/disciplina.service";
 })
 export class AppComponent {
   title = 'gerenciador-disciplinas';
+  constructor() {}
 
-  private _controlador: DisciplinaService;
-
-  constructor() {
-    this._controlador = new DisciplinaService();
-  }
-
-  getControlador(): DisciplinaService {
-    return this._controlador;
-  }
 }
 
