@@ -18,8 +18,9 @@ export class DisciplinaService {
     return this._disciplinas.findIndex(d => d.nome === nome);
   }
 
-  retornarDisciplinaPorIndex(index: number): Disciplina {
-    return this._disciplinas[index];
+  retornarDisciplinaPorIndex(id: number): Disciplina {
+    let indiceNoArray: number = this._disciplinas.findIndex(d => d.id === id);
+    return this._disciplinas[indiceNoArray];
   }
 
   adicionarDisciplina(disciplina: Disciplina): void {

@@ -10,7 +10,7 @@ import { Disciplina } from '../../shared/models/disciplina';
 })
 export class CadastroDisciplinaComponent {
   editar: boolean = false;
-  disciplina: Disciplina = new Disciplina( 0, '', 0, '');
+  disciplina: Disciplina = new Disciplina( '', 0, '');
 
   constructor(private rotaAtual: ActivatedRoute, private roteador: Router, private controlador: DisciplinaService) {
     const idDisciplina = this.rotaAtual.snapshot.paramMap.get('id') || undefined;

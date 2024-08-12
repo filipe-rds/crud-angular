@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DisciplinaService } from "./shared/services/disciplina.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,11 @@ import { DisciplinaService } from "./shared/services/disciplina.service";
 })
 export class AppComponent {
   title = 'gerenciador-disciplinas';
-  constructor() {}
+  constructor(private roteador: Router) { }
+  ngOnInit(): void {
+    // Navegar para a rota 'listar-disciplina' ao carregar o componente pela primeira vez
+    this.roteador.navigate(['/listar-disciplina']);
+  }
 
 }
 

@@ -3,9 +3,11 @@ export class Disciplina {
   private _nome: string;
   private _cargaHoraria: number;
   private _professor: string;
+  
+  private static _proximoID: number = 1;
 
-  constructor(id: number, nome: string, cargaHoraria: number, professor: string) {
-    this._id = id;
+  constructor(nome: string, cargaHoraria: number, professor: string) {
+    this._id = Disciplina._proximoID++;
     this._nome = nome;
     this._cargaHoraria = cargaHoraria;
     this._professor = professor;

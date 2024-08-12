@@ -21,6 +21,7 @@ export class ListarDisciplinaComponent {
 
   remover(disciplina: Disciplina) {
     this.controlador.removerDisciplina(disciplina);
+    this.disciplinas = this.controlador.disciplinas;
   }
 
 

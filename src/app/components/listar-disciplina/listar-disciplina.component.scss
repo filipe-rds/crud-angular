@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card{
+  display: grid;
+  grid-column: auto;
+  width: 400px;
+  margin-top: 20px;
+}
